@@ -7,12 +7,11 @@
  */
 int main(void)
 {
-	int a, b, sum;
+	int a, b, i, sum;
 
 	a = 0;
 	b = 0;
 	sum = 0;
-	int i;
 
 	for (i = 0; i < 1024; i++)
 	{
