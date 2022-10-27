@@ -1,27 +1,24 @@
 #include "main.h"
 
 /**
- * _strcat - concatenate 2 str together
+ * _strncat - concatenate 2 str together
  * @dest: str 1
  * @src: srt 2
+ * @n: number of str to concatenate
  * Return: concatenated str pointer address
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	int len1, len2;
+	int len1;
 	int i;
 
 	len1 = 0;
-	len2 = 0;
 
 	while ( dest[len1] != '\0')
-	       len1++;
+		len1++;
 
-	while ( src[len2] != '\0')
-	       len2++;
-
-	for (i = 0; i <= len2; i++)
+	for (i = 0; i < n; i++)
 	{
 		dest[len1 + i] = src[i];
 	}
