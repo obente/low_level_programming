@@ -1,7 +1,13 @@
 #include "main.h"
 
+/**
+ * _strncat - concatenate 2 str together
+ * @dest: str 1
+ * @src: srt 2
+ * Return: concatenated str pointer address
+ */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src)
 {
 	int len1, len2;
 	int i;
