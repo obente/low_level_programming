@@ -21,6 +21,7 @@ void more_numbers(void)
 			if (z == 58)
 				z = 48;
 		}
+		z = 48;
 		_putchar('\n');
 	}
 }
