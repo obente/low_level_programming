@@ -9,7 +9,8 @@
 
 int _strlen(char *s)
 {
-	int len, i;
+	int len;
+	int i;
 
 	len = 0;
 	if (!s)
@@ -18,7 +19,7 @@ int _strlen(char *s)
 		len++;
 
 	return (len);
-
+}
 
 /**
  * str_concat - concat 2 strs
