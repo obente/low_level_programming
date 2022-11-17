@@ -1,0 +1,7 @@
+#include "variadic_functions.h"
+
+int main()
+{
+	print_numbers(", ",4,1,2,3,4);
+	return (0);
+}
