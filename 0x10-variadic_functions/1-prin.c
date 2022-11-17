@@ -2,6 +2,6 @@
 
 int main()
 {
-	print_numbers(", ",4,1,2,3,4);
+	print_strings(", ",3,"koka","1","2");
 	return (0);
 }
