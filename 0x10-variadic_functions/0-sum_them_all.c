@@ -16,16 +16,20 @@ int sum_them_all(const unsigned int n, ...)
 	else
 	{
 		unsigned int i, sum;
+
 		va_list num;
 
 		va_start(num, n);
+
 		sum = 0;
+
 		for (i = 0; i < n; i++)
 		{
 			int a = va_arg(num, int);
+
 			sum = sum + a;
 		}
 		va_end(num);
-		return sum;
+		return (sum);
 	}
 }
