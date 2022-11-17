@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_number - prints numbers given
+ * print_numbers - prints numbers given
  * @n: int var
  * @separator: seperator str
  * @...: List of nums
@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(num,int));
+		printf("%d", va_arg(num, int));
 		if (i != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
