@@ -4,7 +4,8 @@
 /**
  * sum_them_all - sums numbers given
  * @n: int var
- * @Return: (0)
+ * @...: List of nums
+ * Return: (0) if n is 0
  */
 
 int sum_them_all(const unsigned int n, ...)
