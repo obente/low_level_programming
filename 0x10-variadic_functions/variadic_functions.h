@@ -2,8 +2,22 @@
 #define VARIADIC_FUNCTIONS_H
 
 #include <stdarg.h>
+
+
+
+/**
+ * struct printer - A new struct type defining a printer.
+ * @type: data type literal
+ * @print: A function pointer to a function that prints
+ */
+typedef struct printer
+{
+	char *type;
+	void (*print)(va_list arg);
+} print_z;
+
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
-
+void print_all(const char * const format, ...);
 #endif
