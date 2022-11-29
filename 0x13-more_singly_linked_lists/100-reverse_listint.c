@@ -3,10 +3,10 @@
 /**
  * reverse_listint - reverse list
  * @head: head
- * Return - 1st node
+ * Return: 1st node
  */
 
-listint_t *reverse_listing(listint_t **head)
+listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *p, *n;
 
@@ -19,7 +19,7 @@ listint_t *reverse_listing(listint_t **head)
 		p = *head;
 		*head = n;
 	}
-	
+
 	*head = p;
 	return (*head);
 }
