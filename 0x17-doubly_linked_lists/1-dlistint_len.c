@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * dlistint - count all elements of linkedlist
+ * dlistint_len - count all elements of linkedlist
  * @h: lead of list
  * Return: count of nodes
  */
